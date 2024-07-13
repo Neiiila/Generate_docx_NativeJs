@@ -8,14 +8,14 @@
 
   <body>
 
-    <h1>DOCX browser Word document generation</h1>
+    <h1>Generer doc avec image</h1>
 
-    <button type="button" onclick="generate()">Click to generate document</button>
+    <button type="button" onclick="generate()">Génerer docx</button>
 
     <script>
       async function generate() {
 
-        const imageUrl = "https://th.bing.com/th/id/OIP.xSpasKv2ACIzca09i8tJsgHaLH?rs=1&pid=ImgDetMain"; // Replace with your image URL
+        const imageUrl = "https://th.bing.com/th/id/OIP.xSpasKv2ACIzca09i8tJsgHaLH?rs=1&pid=ImgDetMain"; // cate blanchett pic
         const response = await fetch(imageUrl);
         const arrayBuffer = await response.arrayBuffer();
         const imageBuffer = new Uint8Array(arrayBuffer);
